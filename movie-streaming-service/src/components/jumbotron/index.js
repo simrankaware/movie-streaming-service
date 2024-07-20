@@ -21,7 +21,7 @@ Jumbotron.Pane = function JumbotronPane({ children, ...restProps }) {
 };
 
 Jumbotron.Title = function JumbotronTitle({ children, ...restProps }) {
-  return <h1 className="title" {...restProps}>{children}</h1>;
+  return <h1 className="titleJumbo" {...restProps}>{children}</h1>;
 };
 
 Jumbotron.SubTitle = function JumbotronSubTitle({ children, ...restProps }) {
@@ -29,5 +29,5 @@ Jumbotron.SubTitle = function JumbotronSubTitle({ children, ...restProps }) {
 };
 
 Jumbotron.Image = function JumbotronImage({ ...restProps }) {
-  return <img className="img" {...restProps} />;
+  return <img className="img" {...restProps} alt='val'/>;
 };

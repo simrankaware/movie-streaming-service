@@ -6,7 +6,7 @@ import Footer from "../components/footer";
 export function FooterContainer() {
     return (
         <Footer>
-        <Footer.Title>Questions? Contact us.</Footer.Title>
+        <Footer.Link>Questions? Contact us.</Footer.Link>
         <Footer.Break />
         <Footer.Row>
           <Footer.Column>

@@ -53,14 +53,14 @@
   }
   
   /* Title component styles */
-  .title {
+  .titleJumbo {
     font-size: 50px;
     line-height: 1.1;
     margin-bottom: 8px;
   }
   
   @media (max-width: 600px) {
-    .title {
+    .titleJumbo {
       font-size: 35px;
     }
   }
