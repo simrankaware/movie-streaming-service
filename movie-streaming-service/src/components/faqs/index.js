@@ -8,7 +8,7 @@ export default function FAQs({children,...restProps}) {
 }
 
 FAQs.Container = function FAQsContainer({children, ...restProps}) {
-    return <div className="containerFAQs" {...restProps}>{children}</div>
+    return <div className="container" {...restProps}>{children}</div>
 }
 
 FAQs.Frame = function FAQsFrame({children, ...restProps}) {
@@ -55,5 +55,40 @@ FAQs.Body = function FAQsBody({children, ...restProps}) {
         <div className={className} {...restProps}>
             <span>{children}</span>
         </div>
+    )
+}
+
+/*Container Form Function*/ 
+
+FAQs.ContainerForm = function FAQsContainerForm({children, ...restProps}) {
+    return (
+        <div className="containerForm" {...restProps}>{children}</div>
+    )
+}
+
+FAQs.InputForm = function FAQsInputForm({...restProps}) {
+    return (
+        <input className="inputForm" {...restProps} />
+    )
+}
+
+FAQs.Break = function FAQsBreak({...restProps}) {
+    return (
+        <div className="break" {...restProps}/>
+    )
+}
+
+FAQs.Button = function FAQsButton({children, ...restProps}) {
+    return (
+        <div className="button" {...restProps}>
+            {children}
+            <img src="/images/icons/chevron-right.png" alt="Try now"/>
+        </div>
+    )
+}
+
+FAQs.Text = function FAQsText({children, ...restProps}) {
+    return (
+        <p className="text" {...restProps}>{children}</p>
     )
 }
