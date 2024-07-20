@@ -1,0 +1,92 @@
+/* Item component styles */
+.item {
+    display: flex;
+    flex-direction: column; /* Ensures items stack vertically within .item */
+    border-bottom: 8px solid #222;
+    color: "fff";
+    padding: 50px 5%;
+    overflow: hidden;
+}
+
+/* Inner component styles */
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+  }
+  
+  .inner[data-direction="row"] {
+    flex-direction: row;
+  }
+  
+  .inner[data-direction="row-reverse"] {
+    flex-direction: row-reverse;
+  }
+  
+  @media (max-width: 500px) {
+    .inner {
+      flex-direction: column !important; /* Ensure it overrides the data-direction styles */
+    }
+  }
+  
+  /* Pane component styles */
+  .pane {
+    width: 50%;
+  }
+  
+  @media (max-width: 1000px) {
+    .pane {
+      width: 100%;
+      padding: 0 45px;
+      text-align: center;
+    }
+  }
+
+  /* Image component styles */
+  .img {
+    max-width: 100%;
+    height: auto;
+
+  }
+  
+  /* Title component styles */
+  .title {
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+  
+  @media (max-width: 600px) {
+    .title {
+      font-size: 35px;
+    }
+  }
+  
+  /* SubTitle component styles */
+  .subtitle {
+    font-size: 26px;
+    font-weight: normal;
+    line-height: normal;
+  }
+  
+  @media (max-width: 600px) {
+    .subtitle {
+      font-size: 18px;
+    }
+  }
+  
+  /* Container component styles */
+.container {
+    /* Your container styles here */
+  }
+  
+  /* Specific styles for the last h2 element within an Item on small screens */
+  @media (max-width: 1000px) {
+    .item:last-of-type h2 {
+      margin-bottom: 50px; /* Corrected syntax */
+    }
+  }
+  
