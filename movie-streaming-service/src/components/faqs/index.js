@@ -8,7 +8,7 @@ export default function FAQs({children,...restProps}) {
 }
 
 FAQs.Container = function FAQsContainer({children, ...restProps}) {
-    return <div className="container" {...restProps}>{children}</div>
+    return <div className="containerFAQs" {...restProps}>{children}</div>
 }
 
 FAQs.Frame = function FAQsFrame({children, ...restProps}) {
